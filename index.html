@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spotify</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-
     <!-- Para deixaro css limpo, resetar o stilo padrão -->
-    <link rel="stylesheet" href="assets/reset/reset.css" />
+    <link rel="stylesheet" href="./src/css/reset.css" />
+
+    <link rel="stylesheet" href="./src/css/var.css">
+
+    <link rel="stylesheet" href="src/css/main-container.css">
+    
+    <link rel="stylesheet" href="./src/css/sidebar-footer.css" />
 
     <!-- Links para usar icones do fontawesome  -->
     <link
@@ -29,7 +33,7 @@
       <nav class="sidebar_navigation">
         <div class="logo">
           <a href="">
-            <img src="./assets/icons/logo-spotify.png" alt="logo do Spotify" />
+            <img src="./src/assets/icons/logo-spotify.png" alt="logo do Spotify" />
           </a>
         </div>
         <ul>
@@ -66,10 +70,9 @@
                 <span class="text subtitle">
                     É facil, vamos te ajudar
                 </span>
-                <button class="sectio-playlist__button">
+                <button class="section-playlist__button">
                     <span>Criar playlist</span>
-                </button>
-                
+                </button> 
             </div>
         </section>
 
@@ -85,8 +88,48 @@
         </div>
 
       </div>
-
     </div>
+    
+    <main>
+      <div class="main-container">
+        <nav class="header__navigation">
+          <div class="navigation">
+            <button class="arrow-left">
+              <img src="src/assets/icons/small-left.png" alt="seta esquerda">
+            </button>
+            <button class="arrow-right">
+              <img src="src/assets/icons/small-right.png" alt="seta direita">
+            </button>
+          </div>
+
+            <div class="header__search">
+              <img src="src/assets/icons/search.png" alt="lupa de pesquisa">
+              <input type="text" id="search-input" maxlength="800" placeholder="O que você quer ouvir?">
+            </div>
+
+            <div class="header__login">
+              <button class="subscribe">
+                Inscreva-se
+              </button>
+              <button class="login">
+                Entrar
+              </button>
+            </div>
+        </nav>
+      </div>
+    </main>
+
+    <footer>
+      <div class="footer-text">
+        <p class="maiuscula">Testa o premium de graça</p>
+        <p>Inscreva-se para curtir musicas limitadas e podcasts só com 
+          alguns anúncios. Não precisa de cartão de crédito
+        </p>
+      </div>
+      <button class="footer-button">
+        Inscreva-se Grátis
+      </button>
+    </footer>
 
   </body>
 </html>
